@@ -2,5 +2,5 @@ package com.epam.trainings.di.guice;
 
 public interface FightingStyle {
 
-    String details();
+    String getDetails();
 }
