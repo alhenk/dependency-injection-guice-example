@@ -1,0 +1,4 @@
+/.gradle/2.6/taskArtifacts
+/.idea/modules
+/build/classes/main/com/epam/trainings/di/guice
+/out/production/guice-injection-example
