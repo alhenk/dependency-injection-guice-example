@@ -2,3 +2,16 @@
 /.idea/modules
 /build/classes/main/com/epam/trainings/di/guice
 /out/production/guice-injection-example
+/build/distributions
+/build/reports/tests/css
+/build/reports/tests
+/build/resources/main/assets/images
+/build/scripts
+/build/test-results
+/*.ipr
+/*.iws
+/out/test/guice-injection-example/com/epam/trainings/di/guice
+/build/libs
+/build/classes/test/com/epam/trainings/di/guice
+/build/resources/main
+/build/tmp/jar
