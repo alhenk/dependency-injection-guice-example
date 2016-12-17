@@ -6,15 +6,15 @@ import ratpack.handling.Handler;
 import javax.inject.Inject;
 
 public class TigressFighterHandler implements Handler {
-    private Fighter tigressFighter;
+    private Fighter fighter;
 
     @Inject
-    public TigressFighterHandler(Fighter tigressFighter) {
-        this.tigressFighter = tigressFighter;
+    public TigressFighterHandler(@Tigress Fighter fighter) {
+        this.fighter = fighter;
     }
 
     @Override
     public void handle(Context context) throws Exception {
-
+        context.render("Fighter : "+ fighter.giveUsYourName()+" - " + fighter.fight());
     }
 }

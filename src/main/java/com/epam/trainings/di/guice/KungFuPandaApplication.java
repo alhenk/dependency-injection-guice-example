@@ -26,7 +26,8 @@ public class KungFuPandaApplication {
                             });
                         })
                         .path("fighters", FightersHandler.class) // Map to a dependency injected handler
-                        .path("fighters/Po", FighterHandler.class)
+                        .path("fighters/Po", PoFighterHandler.class)
+                        .path("fighters/Tigress", TigressFighterHandler.class)
                         .prefix("static", nested -> nested.fileSystem("assets/images", Chain::files)) // Bind the /static app path to the src/ratpack/assets/images dir
                         .all(ctx -> ctx.render("root handler!"))
                 )

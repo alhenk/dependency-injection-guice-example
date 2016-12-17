@@ -13,10 +13,14 @@ public class KungFuPandaModule extends AbstractModule {
     protected void configure() {
         bind(FightersService.class).to(FightersServiceImpl.class);
         bind(FightersHandler.class);
-        bind(Weapon.class).to(new ClutchesWeapon().getClass());
-        bind(FightingStyle.class).to(new TigerStile().getClass());
-        bind(Fighter.class).to(TigressFighter.class);
-        bind(FighterHandler.class);
+        bind(Weapon.class).annotatedWith(Clutches.class).to(ClutchesWeapon.class);
+        bind(Weapon.class).annotatedWith(Chopsticks.class).to(ChopsticksWeapon.class);
+        bind(FightingStyle.class).annotatedWith(Tiger.class).to(TigerStile.class);
+        bind(FightingStyle.class).annotatedWith(Dragon.class).to(DragonStyle.class);
+        bind(Fighter.class).annotatedWith(Po.class).to(PoFighter.class);
+        bind(Fighter.class).annotatedWith(Tigress.class).to(TigressFighter.class);
+        bind(PoFighterHandler.class);
+        bind(TigressFighterHandler.class);
         Multibinder.newSetBinder(binder(), HandlerDecorator.class).addBinding().toInstance(HandlerDecorator.prepend(new LoggingHandler()));
     }
 }

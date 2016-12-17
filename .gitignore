@@ -15,3 +15,5 @@
 /build/classes/test/com/epam/trainings/di/guice
 /build/resources/main
 /build/tmp/jar
+/classes
+/.idea
