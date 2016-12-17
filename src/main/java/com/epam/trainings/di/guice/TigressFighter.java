@@ -20,6 +20,6 @@ public class TigressFighter implements Fighter {
 
     @Override
     public String fight() {
-        return fightingStyle.getDetails() + " " + weapon.getAttackDamage();
+        return fightingStyle.getDetails() + " and " + weapon.getAttackDamage();
     }
 }

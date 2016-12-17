@@ -9,6 +9,6 @@ public class ClutchesWeapon implements Weapon{
 
     @Override
     public String getAttackDamage() {
-        return "2 punches - 10 holes";
+        return "I've got deadly Clutches: 2 punches - 10 holes";
     }
 }

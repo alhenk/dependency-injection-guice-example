@@ -10,6 +10,6 @@ public class DragonStyle implements FightingStyle{
 
     @Override
     public String getDetails() {
-        return "I know Dragon style";
+        return "I've mastered Dragon style";
     }
 }

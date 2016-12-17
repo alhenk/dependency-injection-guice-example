@@ -9,6 +9,6 @@ public class TigerStile implements FightingStyle {
 
     @Override
     public String getDetails() {
-        return "I know the Tiger style";
+        return "I've mastered the Tiger style";
     }
 }

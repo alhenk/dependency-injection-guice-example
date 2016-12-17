@@ -10,6 +10,6 @@ public class ChopsticksWeapon implements Weapon{
 
     @Override
     public String getAttackDamage() {
-        return "2 punches - 4 holes";
+        return "I've got deadly Chopsticks: 2 punches - 4 holes";
     }
 }
