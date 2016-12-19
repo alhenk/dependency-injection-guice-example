@@ -12,7 +12,7 @@ class FightersHandler implements Handler {
     private final FightersService fightersService;
 
     @Inject
-    public FightersHandler(FightersService fightersService) {
+    private FightersHandler(FightersService fightersService) {
         this.fightersService = fightersService;
     }
 

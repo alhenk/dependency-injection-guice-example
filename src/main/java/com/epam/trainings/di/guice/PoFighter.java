@@ -8,7 +8,7 @@ public class PoFighter implements Fighter {
     private final FightingStyle fightingStyle;
 
     @Inject
-    public PoFighter(@Chopsticks Weapon weapon, @Dragon FightingStyle fightingStyle) {
+    private PoFighter(@Chopsticks Weapon weapon, @Dragon FightingStyle fightingStyle) {
         this.weapon = weapon;
         this.fightingStyle = fightingStyle;
     }

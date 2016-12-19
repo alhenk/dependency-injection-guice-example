@@ -9,7 +9,7 @@ public class FighterHandler implements Handler {
     private final Fighter fighter;
 
     @Inject
-    public FighterHandler(Fighter fighter) {
+    private FighterHandler(Fighter fighter) {
         this.fighter = fighter;
     }
 

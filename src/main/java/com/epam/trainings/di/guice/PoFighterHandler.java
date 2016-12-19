@@ -12,7 +12,7 @@ public class PoFighterHandler implements Handler {
     private final Fighter fighter;
 
     @Inject
-    PoFighterHandler(@Po Fighter fighter) {
+    private PoFighterHandler(@Po Fighter fighter) {
         this.fighter = fighter;
     }
 

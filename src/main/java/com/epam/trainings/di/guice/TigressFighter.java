@@ -8,7 +8,7 @@ public class TigressFighter implements Fighter {
     private final FightingStyle fightingStyle;
 
     @Inject
-    public TigressFighter(@Clutches Weapon weapon, @Tiger FightingStyle fightingStyle) {
+    private TigressFighter(@Clutches Weapon weapon, @Tiger FightingStyle fightingStyle) {
         this.weapon = weapon;
         this.fightingStyle = fightingStyle;
     }

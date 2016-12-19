@@ -9,7 +9,7 @@ public class TigressFighterHandler implements Handler {
     private Fighter fighter;
 
     @Inject
-    public TigressFighterHandler(@Tigress Fighter fighter) {
+    private TigressFighterHandler(@Tigress Fighter fighter) {
         this.fighter = fighter;
     }
 

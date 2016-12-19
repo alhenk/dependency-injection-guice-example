@@ -1,9 +1,8 @@
 package com.epam.trainings.di.guice;
 
-import javax.inject.Inject;
 
 public class ClutchesWeapon implements Weapon{
-    @Inject
+
     public ClutchesWeapon() {
     }
 
